@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="
+    https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css
+    " rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div data-scroll-container="">
+        <section data-scroll-section="">
+            <p>Magic</p>
+            <span class="lerp-wrap" data-scroll="">
+                <span data-scroll="" data-scroll-delay="0.18" data-scroll-speed="5.6">M</span>
+                <span data-scroll="" data-scroll-delay="0.14" data-scroll-speed="5.6">A</span>
+                <span data-scroll="" data-scroll-delay="0.12" data-scroll-speed="5.6">G</span>
+                <span data-scroll="" data-scroll-delay="0.1" data-scroll-speed="5.6">I</span>
+                <span data-scroll="" data-scroll-delay="0.8" data-scroll-speed="5.6">C</span>
+            </span>
+        </section>
+
+        <section data-scroll-section="">
+            <span class="lerp-wrap" data-scroll="">
+                <span data-scroll="" data-scroll-direction="horizontal-reverse" data-scroll-delay="0.18" data-scroll-speed="5.6">M</span>
+                <span data-scroll="" data-scroll-direction="horizontal" data-scroll-delay="0.14" data-scroll-speed="5.6">A</span>
+                <span data-scroll="" data-scroll-direction="horizontal-reverse" data-scroll-delay="0.12" data-scroll-speed="5.6">G</span>
+                <span data-scroll="" data-scroll-direction="horizontal" data-scroll-delay="0.1" data-scroll-speed="5.6">I</span>
+                <span data-scroll="" data-scroll-direction="horizontal-reverse" data-scroll-delay="0.1" data-scroll-speed="5.6">C</span>
+            </span>
+        </section>
+
+        <section data-scroll-section="">
+            <span class="lerp-wrap" data-scroll="">
+                <span data-scroll="" data-scroll-delay="0.18" data-scroll-speed="-2">M</span>
+                <span data-scroll="" data-scroll-delay="0.14" data-scroll-speed="-2">A</span>
+                <span data-scroll="" data-scroll-delay="0.12" data-scroll-speed="-2">G</span>
+                <span data-scroll="" data-scroll-delay="0.1" data-scroll-speed="-2">I</span>
+                <span data-scroll="" data-scroll-delay="0.8" data-scroll-speed="-2">C</span>
+            </span>
+        </section>
+    </div>
+
+    <script src="
+https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js
+"></script>
+
+<script>
+    const Locoscroll = new LocomotiveScroll({
+        el : document.querySelector('[data-scroll-container]'),
+        smooth : true,
+        smartphone : {
+            smooth : true,
+        }
+    });
+
+</script>
+</body>
+</html>

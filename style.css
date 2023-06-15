@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'realistic';
+    src: url('./womack.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section p {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #222;
+    font-weight: 700;
+    border: 1px solid black;
+}
+
+section {
+    position: relative;
+    height: 100vh;
+    color: #222;
+    display: grid;
+    place-content: center;
+}
+
+section:nth-child(1) {
+    background: #FCEDDA;
+}
+
+section:nth-child(2) {
+    background: #fceddae7;
+}
+
+section:nth-child(3) {
+    background: #f7e8d2e3;
+}
+
+.lerp-wrap {
+    font-family: 'realistic';
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.1;
+}
+
+.lerp-wrap span {
+    display: inline-block;
+    font-size: clamp(30px, 5vw, 10vw);
+    padding: 30px;
+    text-shadow: 2px 2px 20px  rgba(231, 22, 71, 0.653);
+}
